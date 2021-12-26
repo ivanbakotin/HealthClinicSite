@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 45%;
+  }
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ebf0fa;
+}
+
+body * {
+  font-size: 2rem;
+}
+
+body .header {
+  height: 55rem;
+  width: 100%;
+  position: absolute;
+  background-color: #dbdbdb;
+  z-index: -1;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .login-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding: 3rem;
+  background-color: #20a0f5;
+}
+
+body .container .login-header h2 {
+  margin: 1rem;
+}
+
+body .container .login-header h1 {
+  margin: 1rem;
+}
+
+body .container .login-header p {
+  color: #ebf0fa;
+  margin: 1rem;
+}
+
+body .container .login-header input {
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: solid black 1px;
+  outline: none;
+}
+
+body .container .login-header button {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+body .container .cards-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .cards-outer .cards-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body .container .cards-outer .cards-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .container .cards-outer .cards-inner .card-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #44bffc;
+  color: #ebf0fa;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+body .container .cards-outer .cards-inner .card-1 h3 {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+body .container .cards-outer .cards-inner .card-1 p {
+  margin: 1rem;
+}
+
+body .container .cards-outer .cards-inner .card-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #008ffc;
+  color: #ebf0fa;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+body .container .cards-outer .cards-inner .card-2 h3 {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+body .container .cards-outer .cards-inner .card-2 p {
+  margin: 1rem;
+}
+
+body .container .cards-outer .cards-inner .card-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #224ca8;
+  color: #ebf0fa;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+body .container .cards-outer .cards-inner .card-3 h3 {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+body .container .cards-outer .cards-inner .card-3 p {
+  margin: 1rem;
+}
+
+body .container .about {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+body .container .about h2 {
+  font-size: 3rem;
+}
+
+body .container .about div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5rem;
+}
+
+body .container .about div p {
+  width: 50%;
+}
+/*# sourceMappingURL=styles.css.map */

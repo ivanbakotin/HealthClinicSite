@@ -20,18 +20,15 @@ body * {
   font-size: 2rem;
 }
 
-body .slideshow-container {
+body .slideshow {
   position: absolute;
   z-index: -1;
   border-bottom: solid 0.1rem black;
 }
 
-body .slideshow-container .mySlides {
+body .slideshow .slide {
   display: none;
   width: 100%;
-}
-
-body .slideshow-container .fade {
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-duration: 1s;
@@ -57,7 +54,7 @@ body .slideshow-container .fade {
 }
 
 @media (max-width: 768px) {
-  body .slideshow-container {
+  body .slideshow {
     position: static;
   }
 }
@@ -273,8 +270,8 @@ body .container .about img {
 
 @media (max-width: 768px) {
   body .container .about img {
-    height: 30rem;
-    width: 30rem;
+    height: 20rem;
+    width: 20rem;
   }
 }
 
@@ -411,20 +408,18 @@ body .container .grid-cards div .grid-4 p {
   line-height: 1.5;
 }
 
-body .container .grid-cards div div {
+body footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body footer {
   margin-top: 5%;
   background-color: #224ca8;
-  height: 20rem;
   width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 3rem;
+  line-height: 2;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

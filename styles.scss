@@ -36,17 +36,14 @@ body {
         font-size: 2rem;
     }
 
-    .slideshow-container {
+    .slideshow {
         position: absolute;
         z-index: -1;
         border-bottom: solid 0.1rem black;
-
-        .mySlides {
+        
+        .slide {
             display: none;
             width: 100%;
-        }
-
-        .fade {
             animation-name: fade;
             animation-duration: 1s;
         }
@@ -170,8 +167,8 @@ body {
                 width: 40rem;
 
                 @media (max-width: 768px) {
-                    height: 30rem;
-                    width: 30rem;
+                    height: 20rem;
+                    width: 20rem;              
                 }
             }
         }
@@ -204,19 +201,18 @@ body {
                 .grid-4 {
                     @include card(#224ca8);
                 }
-
-                div {
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
+            }   
         }
     }
 
     footer {
+        display: flex;
         margin-top: 5%;
         background-color: #224ca8;
-        height: 20rem;
         width: 100%;
+        justify-content: space-evenly;
+        padding: 3rem;
+        line-height: 2;
+        color: white;
     }
 }

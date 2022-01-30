@@ -1,4 +1,4 @@
-const slides = document.getElementsByClassName("mySlides");
+const slides = document.getElementsByClassName("slide");
 
 let counter =  0;
 

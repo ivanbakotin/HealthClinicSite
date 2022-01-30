@@ -14,19 +14,52 @@
 
 body {
   background-image: url("background-body.jpg");
-  z-index: -1;
 }
 
 body * {
   font-size: 2rem;
 }
 
-body .header-image {
-  max-width: 100%;
-  min-width: 30rem;
+body .slideshow-container {
   position: absolute;
   z-index: -1;
   border-bottom: solid 0.1rem black;
+}
+
+body .slideshow-container .mySlides {
+  display: none;
+  width: 100%;
+}
+
+body .slideshow-container .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  body .slideshow-container {
+    position: static;
+  }
 }
 
 body .container {
@@ -39,14 +72,6 @@ body .container {
           flex-direction: column;
   margin-right: 10%;
   margin-left: 10%;
-}
-
-body .container .body-image {
-  max-width: 100%;
-  min-width: 30rem;
-  height: 100rem;
-  position: absolute;
-  z-index: 5;
 }
 
 body .container .login-nav {
@@ -120,8 +145,6 @@ body .container .cards-outer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 body .container .cards-outer .cards-inner {
@@ -222,19 +245,41 @@ body .container .cards-outer .cards-inner .card-3 p {
 }
 
 body .container .about {
-  margin-top: 10%;
-  background-color: #44bffc;
-  padding: 3rem;
+  margin-top: 6%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-body .container .about h2 {
+body .container .about div {
+  padding: 3rem;
+  border-right: solid 0.2rem #008ffc;
+  border-left: solid 0.2rem #008ffc;
+}
+
+body .container .about div h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
+body .container .about img {
+  height: 40rem;
+  width: 40rem;
+}
+
+@media (max-width: 768px) {
+  body .container .about img {
+    height: 30rem;
+    width: 30rem;
+  }
+}
+
 body .container .grid-cards {
-  margin-top: 10%;
+  margin-top: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,7 +423,7 @@ body .container .grid-cards div div {
 
 body footer {
   margin-top: 5%;
-  background-color: gray;
+  background-color: #224ca8;
   height: 20rem;
   width: 100%;
 }

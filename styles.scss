@@ -36,30 +36,42 @@ body {
         font-size: 2rem;
     }
 
-    background-image: url("background-body.jpg");
-    z-index: -1;
-
-    .header-image {
-        max-width: 100%;
-        min-width: 30rem;
+    .slideshow-container {
         position: absolute;
         z-index: -1;
         border-bottom: solid 0.1rem black;
+
+        .mySlides {
+            display: none;
+            width: 100%;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .5;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            position: static;
+        }
     }
+  
+    background-image: url("background-body.jpg");
 
     .container {
         display: flex;
         flex-direction: column;
         margin-right: 10%;
         margin-left: 10%;
-
-        .body-image {
-            max-width: 100%;
-            min-width: 30rem;
-            height: 100rem;
-            position: absolute;
-            z-index: 5;
-        }
         
         .login-nav {
             display: flex;
@@ -113,7 +125,6 @@ body {
         .cards-outer {
             display: flex;
             width: 100%;
-            flex-wrap: wrap;
             
             .cards-inner {
                 display: flex;    
@@ -138,19 +149,35 @@ body {
         }
 
         .about {
-            margin-top: 10%;
-            background-color: #44bffc;
-            padding: 3rem;
+            margin-top: 6%;
             width: 100%;
+            display: flex;
+            justify-content: space-evenly;
 
-            h2 {
-                font-size: 3rem;
-                margin-bottom: 1rem;
-            }     
+            div {
+                padding: 3rem;
+                border-right: solid 0.2rem #008ffc;
+                border-left: solid 0.2rem #008ffc;
+
+                h2 {
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+                }     
+            }
+
+            img {
+                height: 40rem;
+                width: 40rem;
+
+                @media (max-width: 768px) {
+                    height: 30rem;
+                    width: 30rem;
+                }
+            }
         }
 
         .grid-cards {
-            margin-top: 10%;
+            margin-top: 6%;
             display: flex;
             background-color: #44bffc;
             flex-direction: column;
@@ -188,7 +215,7 @@ body {
 
     footer {
         margin-top: 5%;
-        background-color: gray;
+        background-color: #224ca8;
         height: 20rem;
         width: 100%;
     }

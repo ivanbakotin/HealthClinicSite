@@ -87,7 +87,7 @@ body .container .login-nav {
   margin-top: 10%;
   margin-bottom: 10%;
   padding: 3rem;
-  background-color: #44bffc;
+  background-color: #329bcf;
   color: white;
 }
 
@@ -250,6 +250,9 @@ body .container .about {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container .about div {
@@ -266,6 +269,7 @@ body .container .about div h2 {
 body .container .about img {
   height: 40rem;
   width: 40rem;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {

@@ -6,17 +6,19 @@
     color: #ebf0fa;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    text-align: center;
 
     h3 {
         font-size: 2.5rem;
         margin: 1rem;
+        text-transform: uppercase;
     }
 
     p {
         margin: 1rem;
+        line-height: 1.5;
     }
 }
-
 
 * {
     padding: 0;
@@ -30,63 +32,81 @@
 }
  
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ebf0fa;
-
-
     * {
         font-size: 2rem;
     }
 
-    .header {
-        height: 55rem;
-        width: 100%;
+    background-image: url("background-body.jpg");
+    z-index: -1;
+
+    .header-image {
+        max-width: 100%;
+        min-width: 30rem;
         position: absolute;
-        background-color: #dbdbdb;
         z-index: -1;
+        border-bottom: solid 0.1rem black;
     }
 
     .container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-right: 10%;
+        margin-left: 10%;
+
+        .body-image {
+            max-width: 100%;
+            min-width: 30rem;
+            height: 100rem;
+            position: absolute;
+            z-index: 5;
+        }
         
-        .login-header {
+        .login-nav {
             display: flex;
             flex-direction: column;
             align-self:flex-start;
             align-items: flex-start;
-            margin-top: 10rem;
-            margin-bottom: 10rem;
+            margin-top: 10%;
+            margin-bottom: 10%;
             padding: 3rem;
-            background-color: #20a0f5;
+            background-color: #44bffc;
+            color: white;
+
+            @media (max-width: 768px) {
+                align-self: center;
+                margin-top: 20%;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+                margin: 1rem;
+                letter-spacing: 0.1rem;
+            }
 
             h2 {
                 margin: 1rem;
             }
 
-            h1 {
-                margin: 1rem;
-            }
-
             p {
-                color: #ebf0fa;
                 margin: 1rem;
             }
 
-            input {
-                margin: 1rem;
-                padding: 1rem;
-                border: none;
-                border-bottom: solid black 1px;
-                outline: none;
-            }
+            form {
+                display: flex;
+                flex-direction: column;
 
-            button {
-                margin: 1rem;
-                padding: 1rem;
+                input {
+                    margin: 1rem;
+                    padding: 1rem;
+                    border: none;
+                    border-bottom: solid black 1px;
+                    outline: none;
+                }
+    
+                button {
+                    margin: 1rem;
+                    padding: 1rem;
+                }
             }
         }
         
@@ -118,29 +138,58 @@ body {
         }
 
         .about {
-            margin-top: 5rem;
-            margin-bottom: 5rem;
+            margin-top: 10%;
+            background-color: #44bffc;
+            padding: 3rem;
+            width: 100%;
 
             h2 {
                 font-size: 3rem;
-   
+                margin-bottom: 1rem;
+            }     
+        }
+
+        .grid-cards {
+            margin-top: 10%;
+            display: flex;
+            background-color: #44bffc;
+            flex-direction: column;
+
+            h2  {
+                font-size: 3rem;
+                padding: 2rem;
+                color: white;
+                text-align: center;
             }
 
             div {
                 display: flex;
-                justify-content: space-between;
-                margin-top: 5rem;
 
-                p {
-
-                    width: 50%;
+                .grid-1 {
+                    @include card(#34a2da);
+                }
+                .grid-2 {
+                    @include card(#008ffc);
+                }
+                .grid-3 {
+                    @include card(#0d79cc);
+                }
+                .grid-4 {
+                    @include card(#224ca8);
                 }
 
-                ul {
-
+                div {
+                    display: flex;
+                    flex-direction: column;
                 }
             }
         }
     }
-}
 
+    footer {
+        margin-top: 5%;
+        background-color: gray;
+        height: 20rem;
+        width: 100%;
+    }
+}

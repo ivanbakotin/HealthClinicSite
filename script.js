@@ -1,6 +1,6 @@
 const slides = document.getElementsByClassName("slide");
 
-let counter =  0;
+let counter =  1;
 
 slides[0].style.display = "block";
 

@@ -25,10 +25,15 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: "Arial", Helvetica, sans-serif;
 
     @media (max-width: 768px) {
         font-size: 45%;
     }
+}
+
+:root {
+    --primary-color: #329bcf;
 }
  
 body {
@@ -81,7 +86,7 @@ body {
             margin-top: 10%;
             margin-bottom: 10%;
             padding: 3rem;
-            background-color: #329bcf;
+            background-color: var(--primary-color);
             color: white;
 
             @media (max-width: 768px) {
@@ -134,7 +139,7 @@ body {
                 }
     
                 .card-1 {
-                    @include card(#44bffc);
+                    @include card(var(--primary-color));
                 }
     
                 .card-2 {
@@ -194,7 +199,7 @@ body {
                 display: flex;
 
                 .grid-1 {
-                    @include card(#34a2da);
+                    @include card(var(--primary-color));
                 }
                 .grid-2 {
                     @include card(#008ffc);
@@ -206,6 +211,37 @@ body {
                     @include card(#224ca8);
                 }
             }   
+        }
+
+        .faq {
+            margin-top: 15%;
+            text-align: center;
+
+            .faq-div {
+                margin-bottom: 6%;
+                
+                .faq-question {       
+                    border-bottom: 0.1rem solid gray;
+                    font-weight: bold;
+                    font-size: 3rem;
+                    margin-right: 5%;
+                    cursor: pointer;
+                    margin: 1rem;
+                }
+
+                .faq-body {
+                    height: 0;
+                    opacity: 0;
+                    padding: 0px 1.5rem;
+                    transition: 0.7s ease;
+                }
+
+                .faq-body.active {
+                    height: auto;
+                    opacity: 1;
+                    padding: 1rem;
+                }
+            }
         }
     }
 

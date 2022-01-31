@@ -4,12 +4,17 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  font-family: "Arial", Helvetica, sans-serif;
 }
 
 @media (max-width: 768px) {
   * {
     font-size: 45%;
   }
+}
+
+:root {
+  --primary-color: #329bcf;
 }
 
 body {
@@ -90,7 +95,7 @@ body .container .login-nav {
   margin-top: 10%;
   margin-bottom: 10%;
   padding: 3rem;
-  background-color: #329bcf;
+  background-color: var(--primary-color);
   color: white;
 }
 
@@ -171,7 +176,7 @@ body .container .cards-outer .cards-inner .card-1 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-color: #44bffc;
+  background-color: var(--primary-color);
   color: #ebf0fa;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -315,7 +320,7 @@ body .container .grid-cards div .grid-1 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-color: #34a2da;
+  background-color: var(--primary-color);
   color: #ebf0fa;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -412,6 +417,38 @@ body .container .grid-cards div .grid-4 h3 {
 body .container .grid-cards div .grid-4 p {
   margin: 1rem;
   line-height: 1.5;
+}
+
+body .container .faq {
+  margin-top: 15%;
+  text-align: center;
+}
+
+body .container .faq .faq-div {
+  margin-bottom: 6%;
+}
+
+body .container .faq .faq-div .faq-question {
+  border-bottom: 0.1rem solid gray;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-right: 5%;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+body .container .faq .faq-div .faq-body {
+  height: 0;
+  opacity: 0;
+  padding: 0px 1.5rem;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+body .container .faq .faq-div .faq-body.active {
+  height: auto;
+  opacity: 1;
+  padding: 1rem;
 }
 
 body footer {

@@ -14,6 +14,10 @@
 
 body {
   background-image: url("background-body.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body * {
@@ -96,7 +100,6 @@ body .container .login-nav {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin-top: 20%;
   }
 }
 
@@ -242,7 +245,7 @@ body .container .cards-outer .cards-inner .card-3 p {
 }
 
 body .container .about {
-  margin-top: 6%;
+  margin-top: 10%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,7 +283,7 @@ body .container .about img {
 }
 
 body .container .grid-cards {
-  margin-top: 6%;
+  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

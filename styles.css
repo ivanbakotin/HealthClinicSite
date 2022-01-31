@@ -15,6 +15,7 @@
 
 :root {
   --primary-color: #329bcf;
+  --seconday-color: ;
 }
 
 body {
@@ -425,14 +426,13 @@ body .container .faq {
 }
 
 body .container .faq .faq-div {
-  margin-bottom: 6%;
+  margin-bottom: 8%;
 }
 
 body .container .faq .faq-div .faq-question {
   border-bottom: 0.1rem solid gray;
   font-weight: bold;
   font-size: 3rem;
-  margin-right: 5%;
   cursor: pointer;
   margin: 1rem;
 }
@@ -440,17 +440,17 @@ body .container .faq .faq-div .faq-question {
 body .container .faq .faq-div .faq-body {
   height: 0;
   opacity: 0;
-  padding: 0px 1.5rem;
+  margin: 1rem;
   position: relative;
   z-index: -1;
-  -webkit-transition: 0.7s ease;
-  transition: 0.7s ease;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body .container .faq .faq-div .faq-body.active {
   height: auto;
   opacity: 1;
-  padding: 1rem;
+  margin: 2rem;
 }
 
 body footer {

@@ -441,6 +441,8 @@ body .container .faq .faq-div .faq-body {
   height: 0;
   opacity: 0;
   padding: 0px 1.5rem;
+  position: relative;
+  z-index: -1;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
 }

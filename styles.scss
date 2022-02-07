@@ -230,18 +230,13 @@ body {
                 }
 
                 .faq-body {
-                    height: 0;
-                    opacity: 0;
-                    margin: 1rem;
-                    position: relative;
-                    z-index: -1;
-                    transition: 1s;
+                    max-height: 0;
+                    transition: max-height 0.5s linear;
+                    overflow: hidden;
                 }
 
                 .faq-body.active {
-                    height: auto;
-                    opacity: 1;
-                    margin: 2rem;
+                    max-height: 250px;
                 }
             }
         }

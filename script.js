@@ -22,6 +22,9 @@ setInterval(() => {
 
 }, 3000)
 
+
+
+
 const faq = document.getElementsByClassName("faq-question");
 
 for (let i = 0; i < faq.length; i++) {

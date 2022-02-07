@@ -438,19 +438,14 @@ body .container .faq .faq-div .faq-question {
 }
 
 body .container .faq .faq-div .faq-body {
-  height: 0;
-  opacity: 0;
-  margin: 1rem;
-  position: relative;
-  z-index: -1;
-  -webkit-transition: 1s;
-  transition: 1s;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s linear;
+  transition: max-height 0.5s linear;
+  overflow: hidden;
 }
 
 body .container .faq .faq-div .faq-body.active {
-  height: auto;
-  opacity: 1;
-  margin: 2rem;
+  max-height: 250px;
 }
 
 body footer {
